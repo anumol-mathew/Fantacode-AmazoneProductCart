@@ -8,7 +8,8 @@ import time
 
 # Initialize WebDriver
 driver = webdriver.Chrome()
-
+driver.maximize_window()
+wait = WebDriverWait(driver, 5)
 try:
     # Step 1: Navigate to Amazon
     driver.get("https://www.amazon.com/")
